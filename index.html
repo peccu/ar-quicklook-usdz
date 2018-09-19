@@ -26,6 +26,7 @@
     </a>
 
     <h2>in HTML</h2>
+    <code>img<code> tag in <code>a<code> tag is required.
     <code>
       <pre>
 &lt;p data-hide-on-relar &gt;Visit this page on iOS 12 to try AR Quick Look&lt;/p&gt;
@@ -35,7 +36,7 @@
       </pre>
     </code>
 
-    <h2>in JavaScript</h2>
+    <h2>in JavaScript (How to detect whether the browser has the AR feature or not.)</h2>
     <code>
       <pre>
 /* from Apple's AR Quick Look Gallery */
@@ -45,12 +46,13 @@
   if (a.relList.supports('ar')) {
     isRelAR = true;
   }
+  // to hide caveats by style
   document.documentElement.classList.add(isRelAR ? 'relar' : 'no-relar');
 })();
       </pre>
     </code>
 
-    <h2>in CSS</h2>
+    <h2>in CSS (Hide caveats)</h2>
     <code>
       <pre>
 .relar [data-hide-on-relar] {
@@ -59,6 +61,8 @@
       </pre>
     </code>
 
-    More usdz are in <a href="https://developer.apple.com/arkit/gallery/" target="_blank">https://developer.apple.com/arkit/gallery/</a> or <a href="https://www.fusionar.app">https://www.fusionar.app</a>.
+    <p>More usdz are in <a href="https://developer.apple.com/arkit/gallery/" target="_blank">https://developer.apple.com/arkit/gallery/</a> or <a href="https://www.fusionar.app">https://www.fusionar.app</a>.</p>
+    <p>More resources are in <a href="https://github.com/vfxpro99/usd-resources">https://github.com/vfxpro99/usd-resources</a></p>
+
   </body>
 </html>
